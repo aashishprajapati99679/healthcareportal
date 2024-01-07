@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="hcp.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>HEALTH CARE POINT</title>
+</head>
+
+<body>
+
+    <!-- title bar part start degin by AASHISH -->
+
+    <div class="title-bar">
+        <div class="company-name">
+            <h1><span style="color: red;">Health</span>CarePoint</h1>
+
+        </div>
+        <table>
+            <tr>
+                <td><a class="herfhome" href="#">
+                        HOME
+                    </a></td>
+
+
+                <td class="navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">SERVICES</div>
+                        <div class="dropdown-content">
+                            <a href="#">REVENUE CYCLE SERVICES</a>
+                            <a href="#">BPO SERVICES FOR HEALTH PLANS</a>
+                            <a href="#">RCM AUTOMATION AND ANALYTICS</a>
+                            <a href="#">IT SERVICES</a>
+                            <a href="#">FINANCE AND ACCOUNTING SERVICES</a>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">WHO WE HELP</div>
+                        <div class="dropdown-content">
+                            <a href="#">HOSPITALS AND HEALTHCARE SYSTEM</a>
+                            <a href="#">MEDICAL BILLING COMPANIES</a>
+                            <a href="#">DENTAL REVENUE CYCLE MANAGEMENT</a>
+                            <a href="#">HEALTHCARE PAYERS</a>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">HOW</div>
+                        <div class="dropdown-content">
+                            <a href="#">PEOPLE</a>
+                            <a href="#">PROCESS</a>
+                            <a href="#">TECHNOLOGY</a>
+                            <a href="#">BEST PRACTICES</a>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">RESOURCES</div>
+                        <div class="dropdown-content">
+                            <a href="#">EVENTS</a>
+                            <a href="#">NEWS</a>
+                            <a href="#">BLOG</a>
+                            <a href="#">CASE STUDENTS</a>
+                            <a href="#">WHITE PAPERS</a>
+                        </div>
+                    </div>
+                    </th>
+
+                <td class="navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">ABOUT</div>
+                        <div class="dropdown-content">
+                            <a href="#">DNA-ACCESS HEALTHCARE</a>
+                            <a href="#">CERTIFICATIONS</a>
+                            <a href="#">LOCATIONS</a>
+                            <a href="#">ADVISORY BOARD</a>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">CONTACT</div>
+                    </div>
+                </td>
+
+                <!-- <th ><a class="herf" href="#">SERVICES</a></th> -->
+                <!-- <th ><a class="herf" href="#">WHO WE HELP</a></th> -->
+                <!-- <th ><a class="herf" href="#">HOW</a></th> -->
+                <!-- <th ><a class="herf" href="#">RESOURCES</a></th> -->
+                <!-- <th ><a class="herf" href="#">ABOUT</a></th> -->
+                <!-- <th ><a class="herf" href="#">CONTACT US</a></th> -->
+                <th><a class="herfsearch" href="#">SEARCH</a></th>
+            </tr>
+        </table>
+    </div>
+    <!-- END TITLE bar -->
+
+
+    <!-- image slider part degin by AASHISH  -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://afcogroup.in/wp-content/uploads/2017/06/nature-slider-photo.jpg"
+                style="width:100%; height: 400px; ">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://wowslider.com/sliders/demo-9/data/images/nature_forest_forest_010852_.jpg"
+                style="width:100%; height: 400px;">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGYwktg349gjK2AYOuvvItN1r1KFcAKdyxA&usqp=CAU"
+                style="width:100%; height: 400px;">
+            <div class="text">Caption Three</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- imgage slider part END -->
+
+    <!-- SubTitle Bar -->
+    <div class="subnote"><br><br>AIM TO PROVIDE YOU A BEST HEALTHCARE & BUSINESS PROCESS AND <br>TECHNOLOGY
+        SOLUTIONS<br>
+    </div>
+    <!-- subTitle END -->
+    <hr class="one">
+
+
+    <div class="subnote1">
+        <br><br><br>
+        <h1 style="font-size: 20px;">INFUSING EFFICIENCY INTO HEALTHCAREPOINT</h1>
+        <div class="paracontaner">
+            <p class="para1" style="font-size: 16px;">Infusing efficiency into healthcare involves various strategies
+                and technologies aimed at improving processes, reducing waste, enhancing patient care, and optimizing
+                resource utilization. As simple as that <br><br>
+                HealthCarePoint enables <span style="color: #E82C2F;"> Hospitals, Healthcare Systems, Medical Groups,
+                    Medical Billing Companies, Health Plans,</span> and boutique RCM software and services firms to grow
+                and thrive. We take a technology-led, people-first approach to transforming your business processes. We
+                infuse scalability and apply our best practices and<span style="color: #E82C2F;"> process automation
+                    platform</span> to help you achieve market-leading clinical, administrative, and financial outcomes.
+            </p>
+            <img style="padding-left:82px ;"
+                src="https://klasresearch.com/files/assets/vendor-widget/service/access_healthcare_SVG.svg" width="20%"
+                alt="">
+        </div>
+    </div><br>
+
+    <!-- /////////////////main part   cube container////////////////////// -->
+
+    <div class="main">
+
+       &nbsp;&nbsp;&nbsp;&nbsp; <div class="box1">
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-md"
+                style="font-size:40px;"></i><br><br>&nbsp;&nbsp; &nbsp;&nbsp;Health Care
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="box2">
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#129463;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Denatal
+            Care
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="box3">
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F9E0;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Meantal
+            Care
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="box4">
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F9B4;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Orthopedist
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;<div class="textbox1">
+            Access Healthcare equips health systems and hospitals with the expertise they need to successfully
+            transition to value-based care despite these industry challenges.<br><br>
+            <span style="color: red;">Health Systems benefit →</span>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="textbox2">
+            Generate healthier cash flow for your providers. Stimulate growth in your market share. Discover how going
+            beyond traditional revenue cycle management empowers better results for you and your providers.
+            <br><br>
+            <span style="color: red;">Medical Billing Companies Benefit→</span>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="textbox3">
+            Reduce denials and improve revenue for your Dental offices, while improving patient satisfaction. Discover
+            how we bring a smile to the faces of your dental practice managers and central billing office leaders.
+            <br><br>
+            <span style="color: red;">How Dental Providers Benefit →</span>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="textbox4">
+            Access Healthcare equips health systems and hospitals with the expertise they need to successfully
+            transition to value-based care despite these industry challenges.<br><br>
+            <span style="color: red;">Health Systems benefit →</span>
+        </div>
+
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
